@@ -31,13 +31,10 @@ namespace UnitTest
             Assert.IsTrue(_passwordValidator.MoreLessCharactersValidate(pass));
         }
 
-        [TestCase("myp")]
+        [TestCase("123")]
         public void PassLessThanSixCharacters(string pass)
         {
             Assert.IsFalse(_passwordValidator.MoreLessCharactersValidate(pass));
         }
-
-
-
     }
 }
